@@ -1,5 +1,0 @@
-# NOTE the file size is in Kilobytes
-output_dir: generated_files
-files:
-  - name: photo1.cr2
-    size: 512

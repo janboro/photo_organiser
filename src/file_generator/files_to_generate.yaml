@@ -1,0 +1,14 @@
+# NOTE the file size is in Kilobytes
+output_dir: generated_files
+kilobyte: 1024 # 2^10
+files:
+  - name: .gitignore
+    size: 512
+  # - name: test_photo1.cr2
+  #   size: 512
+  # - name: test_photo2
+  #   size: 512
+  # - name: test_text_file.txt
+  #   size: 512
+  # - name: test_archive.tar.gz
+  #   size: 512

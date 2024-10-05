@@ -2,8 +2,8 @@ from enum import Enum
 from typing import Any
 
 import inquirer
-
 from runners.run_file_generation import run_random_file_generation
+from runners.run_tests import run_tests
 
 
 class ProgramAction(Enum):
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     match answers["action"]:
         case ProgramAction.run_program.value:
             print("Run P")
-        case ProgramAction.run_tests.value:
-            print("Run t")
+        # case ProgramAction.run_tests.value:
+        #     run_tests()
         case ProgramAction.generate_random_files.value:
             run_random_file_generation()

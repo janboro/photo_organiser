@@ -3,7 +3,8 @@ import os
 
 import yaml
 
-with open("params.yaml", "r", encoding="UTF-8") as params:
+# TODO Use os path and join
+with open("params/file_read_params.yaml", "r", encoding="UTF-8") as params:
     PARAMS = yaml.load(params, Loader=yaml.SafeLoader)
 
 

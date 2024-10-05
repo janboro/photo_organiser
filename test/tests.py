@@ -60,6 +60,5 @@ class TestFileOrganiser(unittest.TestCase):
 
 if __name__ == "__main__":
     # TestFileOrganiser().test_all()
-    tear_down_test_dirs()
     create_test_dirs()
     tear_down_test_dirs()
