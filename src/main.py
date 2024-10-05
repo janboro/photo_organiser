@@ -2,13 +2,12 @@ from enum import Enum
 from typing import Any
 
 import inquirer
-from runners.run_file_generation import run_random_file_generation
-from runners.run_tests import run_tests
+
+from file_generator.random_file_generator import FileGenerator
 
 
 class ProgramAction(Enum):
     run_program = "Run Program"
-    run_tests = "Run Tests"
     generate_random_files = "Generate Random Files"
 
     @classmethod
@@ -32,4 +31,4 @@ if __name__ == "__main__":
         # case ProgramAction.run_tests.value:
         #     run_tests()
         case ProgramAction.generate_random_files.value:
-            run_random_file_generation()
+            FileGenerator().run_random_file_generation()
